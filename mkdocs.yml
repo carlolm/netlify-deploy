@@ -1,0 +1,127 @@
+# Project info
+site_name: hummingbot docs
+site_description: 'Docs for hummingbot, the open source crypto market making bot'
+site_author: 'CoinAlpha, Inc.'
+site_url: 'https://docs.hummingbot.io'
+
+# Repository
+repo_name: 'coinalpha/hummingbot'
+repo_url: 'https://github.com/coinalpha/hummingbot'
+edit_uri: 'blob/master/documentation/docs/'
+
+# Copyright
+copyright: 'Copyright &copy; 2019 CoinAlpha, Inc.'
+
+# Configuration
+theme:
+  name: 'material'
+  logo: 'assets/img/logo.png'
+  favicon: 'assets/img/favicon.ico'
+  palette:
+    primary: 'teal'
+    accent: 'teal'
+  font:
+      text: 'Roboto'
+      code: 'Roboto Mono'
+
+# Customization
+extra:
+  search:
+    language: 'en'
+  social:
+    - type: 'globe'
+      link: 'https://www.hummingbot.io'
+    - type: 'github'
+      link: 'https://github.com/coinalpha/hummingbot'
+    - type: 'twitter'
+      link: 'https://twitter.com/hummingbot_io'
+google_analytics:
+  - 'UA-119262087-3'
+  - 'auto'
+extra_css:
+  - assets/css/custom.css
+extra_javascript:
+  - assets/js/heap.js
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Navigation
+nav:
+    - Intro:
+      - Getting started: index.md
+      - FAQ: faq.md
+      - Whitepaper: whitepaper.md
+      - Roadmap: roadmap.md
+      - Terminology: glossary.md
+    - Installation:
+      - Installation: installation.md
+      - Install from Docker:
+        - Windows: installation/docker_windows.md
+        - MacOS/Linux: installation/docker_macOS_linux.md
+      - Install from source:
+        - Windows: installation/windows.md
+        - MacOS/Linux: installation/source.md
+      - Install on cloud: installation/cloud.md
+      - API keys: installation/api-keys.md
+      - Ethereum wallet: installation/wallet.md
+      - Ethereum node: installation/node.md
+    - Operation:
+      - Client: operation/client.md
+      - Configuration: operation/configuration.md
+      - Running bots: operation/running-bots.md
+      - Running bots in the cloud: operation/running-bots-in-the-cloud.md
+      - Logging: operation/logging.md
+      - Exchange rates: operation/exchange-rates.md
+      - Telegram integration: operation/telegram.md
+      - Debug console: operation/debug.md
+    - Connectors:
+      - Connectors: connectors.md
+      - Binance: connectors/binance.md
+      - Coinbase Pro: connectors/coinbase.md
+      - DDEX: connectors/ddex.md
+      - Radar Relay: connectors/radar-relay.md
+      - 0x open order book relayers: connectors/0x.md
+    - Strategies:
+      - Strategies: strategies.md
+      - Cross-exchange market making: strategies/cross-exchange-market-making.md
+      - Arbitrage: strategies/arbitrage.md
+      - Discovery: strategies/discovery.md
+      - Pure market making: strategies/pure-market-making.md
+    - Support:
+      - Support: support.md
+      - Bug bounty program: support/bug-bounty-program.md
+      - Known issues: support/issues.md
+    - Release notes:
+      - Release notes: release-notes.md
+      - 0.8.0: release-notes/0.8.0.md
+      - 0.7.0: release-notes/0.7.0.md
+      - 0.6.0: release-notes/0.6.0.md
+      - 0.5.1: release-notes/0.5.1.md
+      - 0.5.0: release-notes/0.5.0.md
+      - 0.4.0: release-notes/0.4.0.md
+      - 0.3.1 (beta): release-notes/0.3.1.md
+      - 0.3.0: release-notes/0.3.0.md
+      - 0.2.0: release-notes/0.2.0.md
